@@ -1,0 +1,20 @@
+{
+  "builders": [{
+    "type": "amazon-ebs",
+    "access_key": "",
+    "secret_key": "",
+    "region": "ap-northeast-1",
+    "source_ami": "ami-21077220",
+    "instance_type": "m1.small",
+    "ssh_username": "ubuntu",
+    "ssh_timeout": "5m",
+    "ami_name": "packer-ubuntu-ja {{timestamp}}"
+  }],
+  "provisioners": [{
+    "type": "chef-solo",
+    "cookbook_paths": ["./cookbooks/"],
+    "run_list": ["ubuntu-ja-cookbook"],
+    "prevent_sudo": false,
+    "skip_install": false
+  }]
+}
