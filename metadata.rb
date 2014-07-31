@@ -1,4 +1,4 @@
-name             'ubuntu-ja-cookbook'
+name             'ubuntu-ja'
 maintainer       'Hirotaka Mizutani'
 maintainer_email 'hirotaka@mizutani.to'
 license          'All rights reserved'
