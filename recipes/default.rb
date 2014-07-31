@@ -34,7 +34,8 @@ end
 
 # Run apt-get upgrade
 execute 'apt-get-upgrade' do
-  command 'apt-get upgrade -y'
+  # skip a grub config prompt
+  command 'DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" upgrade'
   ignore_failure false
 end
 

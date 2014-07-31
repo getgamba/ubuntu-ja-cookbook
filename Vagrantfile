@@ -3,7 +3,7 @@
 
 Vagrant.configure("2") do |config|
   config.vm.hostname = "ubuntu-ja-cookbook"
-  config.vm.box = "chef/ubuntu-13.10"
+  config.vm.box = "chef/ubuntu-14.04"
   config.vm.network :private_network, ip: "192.168.33.15"
   config.vm.provider :virtualbox do |vb|
     vb.gui = false
@@ -12,6 +12,7 @@ Vagrant.configure("2") do |config|
   end
   config.omnibus.chef_version = :latest
   config.vm.provision :chef_solo do |chef|
+    chef.cookbooks_path = ["berks-cookbooks", "site-cookbooks"]
     chef.json = {
       :mysql => {
         :server_root_password => 'rootpass',

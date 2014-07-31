@@ -1,3 +1,3 @@
-site :opscode
+source "https://api.berkshelf.com"
 
-metadata
+cookbook 'ubuntu-ja-cookbook', path: '.'
