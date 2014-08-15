@@ -2,7 +2,7 @@
 # Cookbook Name:: ubuntu-ja
 # Recipe:: default
 #
-# Copyright (C) 2014 zenstyle, inc.
+# Copyright (C) 2014 gamba, inc.
 # 
 # All rights reserved - Do Not Redistribute
 #

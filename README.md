@@ -1,13 +1,14 @@
 # ubuntu-ja-cookbook cookbook
 
-# Requirements
+# Vagrantを起動
 
-# Usage
+cookbookをインストールして起動します。
 
-# Attributes
-
-# Recipes
+'''
+$ berks vendor
+$ vagrant up
+'''
 
 # Author
 
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+Author:: Hirotaka Mizutani (<hirotaka@mizutani.to>)
